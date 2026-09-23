@@ -1,16 +1,16 @@
 {
-  "user": [
-    {
-      "name": "vanshika",
-      "email": "vanshika@gmail.com",
-      "password": "vanshika@123",
-      "id": "nwvXtuiW6h0"
-    },
+  "users": [
     {
       "name": "anshika",
       "email": "anshika@gmail.com",
       "password": "anshika@123",
-      "id": "5pYd5phcqHs"
+      "id": "ZzO3t3N3U8w"
+    },
+    {
+      "email": "Vanshika@gmail.com",
+      "name": "Vanshika Chaudhary",
+      "password": "Vanshika@123",
+      "id": "QXlrMP9GFZY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
