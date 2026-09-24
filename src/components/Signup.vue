@@ -22,6 +22,10 @@
                 Sign Up
             </button>
 
+            <p>
+                <router-link to="/login">Login</router-link>
+            </p>
+
         </div>
 
     </div>
