@@ -8,10 +8,6 @@
             Add Restaurant
         </router-link>
 
-        <router-link to="update" class="text-white hover:text-green-400 text-lg">
-            Update Restaurant
-        </router-link>
-
         <a
             v-on:click="logout"
             href="#"

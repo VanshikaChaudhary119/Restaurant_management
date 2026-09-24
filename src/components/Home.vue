@@ -14,6 +14,7 @@
                         <th class="border border-gray-300 px-4 py-2">Name</th>
                         <th class="border border-gray-300 px-4 py-2">Address</th>
                         <th class="border border-gray-300 px-4 py-2">Contact</th>
+                        <th class="border border-gray-300 px-4 py-2">Actions</th>
                     </tr>
                 </thead>
 
@@ -35,7 +36,9 @@
                         <td class="border border-gray-300 px-4 py-2">
                             {{ item.contact }}
                         </td>
+                      <td class="border border-gray-300 px-4 py-2"><router-link :to="'/update/'+item.id" >Update</router-link></td>
                     </tr>
+
                 </tbody>
             </table>
         </div>
