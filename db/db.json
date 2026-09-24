@@ -29,6 +29,12 @@
       "name": "Yashika",
       "password": "Yashika@123",
       "id": "HjcyEjwUtj4"
+    },
+    {
+      "email": "priya@gmail.com",
+      "name": "Priya",
+      "password": "Priya@1234",
+      "id": "v8_akwFvGFM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
