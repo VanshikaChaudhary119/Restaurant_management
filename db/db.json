@@ -11,6 +11,24 @@
       "name": "Vanshika Chaudhary",
       "password": "Vanshika@123",
       "id": "QXlrMP9GFZY"
+    },
+    {
+      "email": "testuser",
+      "name": "",
+      "password": "Test@1234",
+      "id": "Mu6EAOSS4gw"
+    },
+    {
+      "email": "Muskan@gmail.com",
+      "name": "Muskan",
+      "password": "Muskan@123",
+      "id": "r1s-NzsX0y8"
+    },
+    {
+      "email": "yashika@gmail.com",
+      "name": "Yashika",
+      "password": "Yashika@123",
+      "id": "HjcyEjwUtj4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

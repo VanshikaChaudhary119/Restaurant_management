@@ -52,6 +52,8 @@ export default {
             {
                 alert("Signup done");
             }
+            localStorage.setItem("user-info",JSON.stringify(result.data))
+            this.$router.push({name:'Home'});
         }
     }
 };
