@@ -1,7 +1,7 @@
 <template>
 
 
- <div class="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+    <div class="min-h-screen flex flex-col items-center justify-center bg-gray-100">
 
         <img class="w-32 h-32 object-contain mb-4" src="../assets/resto.png" alt="Restaurant Logo" />
 
@@ -11,7 +11,7 @@
 
         <div class="bg-white p-8 rounded-lg shadow-md w-96 flex flex-col gap-4">
 
-          
+
 
             <input type="text" v-model="email" placeholder="Enter email"
                 class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
@@ -33,7 +33,34 @@
 </template>
 
 <script>
-export default{
+import axios from "axios"
+export default {
+    data() {
+        return {
+            email: '',
+            password: ''
+        }
+    },
+    methods: {
+        async login() {
+            let result = await axios.get(
+                `http://localhost:3000/users?email=${this.email}&password=${this.password}`
+            );
 
+            if (result.status == 200 && result.data.length > 0) {
+                localStorage.setItem("user-info", JSON.stringify(result.data[0]));
+                this.$router.push({ name: 'Home' });
+            }
+
+        }
+    },
+     mounted()
+    {
+        let user = localStorage.getItem('user-info');
+        if(user)
+    {
+         this.$router.push({name:'Home'});
+    }
+    }
 }
 </script>
