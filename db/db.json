@@ -43,5 +43,25 @@
       "id": "37fTk5pgufg"
     }
   ],
+  "restaurant":[
+    {
+      "id":1,
+      "name":"KFC",
+      "address":"Noida sector 50",
+      "contact":12345
+    },
+     {
+      "id":2,
+      "name":"Dominoz",
+      "address":"Noida sector 52",
+      "contact":987654321
+    },
+     {
+      "id":3,
+      "name":"Burger King",
+      "address":"Delhi",
+      "contact":6789543
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
