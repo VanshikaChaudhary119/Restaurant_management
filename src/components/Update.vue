@@ -28,7 +28,7 @@
 
 <script>
 import Header from './Header.vue';
-
+import axios from 'axios';
 export default{
     components:{
 Header
@@ -43,13 +43,15 @@ Header
             }
         }
     },
-mounted()
+async mounted()
     {
         let user = localStorage.getItem('user-info');
         if(!user)
     {
          this.$router.push({name:'Signup'});
     }
+    const result = await axios.get("http://localhost:3000/restaurant/"+ this.$route.params.id);
+    this.restaurant= result.data;
     }
 }
 </script>
